@@ -1,0 +1,26 @@
+name: angelangular
+dependencies:
+  angel_hot: ^1.0.0 
+  angel_common: ^1.0.0 
+  angel_security: ^1.0.0 
+  angel_auth: 1.0.4+1
+  angel_cors: ^1.0.0+1
+
+  angular: ^4.0.0
+  angular_components: ^0.7.1
+  angular_router: ^1.0.2
+dev_dependencies:
+  browser: ^0.10.0
+  dart_to_js_script_rewriter: ^1.0.3
+transformers:
+  - angular:
+      entry_points:
+        - web/main.dart
+  - dart_to_js_script_rewriter
+  - $dart2js:
+        minify: false
+        commandLineOptions:
+          - --fast-startup
+          - --trust-type-annotations
+          - --trust-primitives
+          - --dump-info

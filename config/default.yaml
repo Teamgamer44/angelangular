@@ -1,0 +1,2 @@
+mongo_db: mongodb://localhost:27017/angelangulars
+jwt_key: A73hfYWnaC1kxABqkcqmaD32mfHAAQ2
